@@ -212,6 +212,16 @@ gridlines: { count: 5 }
 var chart = new google.visualization.ScatterChart(document.getElementById('scatter_div'));
 chart.draw(data, options)
 }
+<div id="last-updated">Loading last update time...</div>
+
+<button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+Verify Last Modified Time
+</button>
+
+<script>
+async function getLastUpdatedTime() {
+const username = 'mk03057';
+const repo = 'FY
 </script>  
  
 </html>
