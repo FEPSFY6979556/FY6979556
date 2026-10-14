@@ -258,5 +258,26 @@ chart.draw(data, options)
 
   window.onload = getLastUpdatedTime;
 </script>
+
+<p id="totalWordCount"></p>
+<hr>
+
+<script>
+  function displayWordCount(sectionId, outputId) {
+    const text = document.getElementById(sectionId).textContent;
+    const wordArr = text.trim().split(/\s+/);
+    const wordCount = wordArr.length;
+    return wordCount;
+  }
+
+  function displayTotalWordCount() {
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    const totalWordCount = IntroductionCount + AnalysisCount;
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+
+  window.onload = displayTotalWordCount;
+</script>
  
 </html>
