@@ -202,11 +202,11 @@ var options = {
 title: 'Age vs. Salary',
 hAxis: { title: 'Age' },
 viewWindow: { min:20, max: 55 },
-ticks: [20, 30, 40, 50]
+gridlines: { count: 5 }
 }, 
 vAxis: { title: 'Salary' }
 viewWindow: { min: 0, max: 110000 },
-ticks: [0, 25000, 50000, 75000, 100000]
+gridlines: { count: 5 }
 }
 };
 var chart = new google.visualization.ScatterChart(document.getElementById('scatter_div'));
