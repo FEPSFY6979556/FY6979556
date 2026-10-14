@@ -141,7 +141,15 @@
    ]);
   
    var options = {
-    title: 'My Daily Activities'
+    title: 'My Daily Activities',
+    width: 500,
+    height: 400,
+    chartArea: {
+     left:'10%',
+     top:'10%',
+     width:'80%',
+     height:'80%'
+    }
    };
 
    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
