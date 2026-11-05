@@ -128,42 +128,6 @@ Table 1: Common Seatbelt-Related Injuries and their Causes
   Though seatbelt-related injuries can occur, they are generally less severe than those sustained by unrestrained occupants (Rezapour and Ksaibati, 2022). These injuries result from the restraining forces required to stop the body during a collision (Kent et al., 2008). However, those same forces prevent occupants from striking the vehicle interior or being ejected from the vehicle (Rezapour and Ksaibati, 2022). Correct seatbelt positioning and modern technologies such as pretensioners can further reduce injury risk (Soica and Gheorghe, 2025). Therefore, despite their limitations, seatbelts remain one of the most effective safety devices in modern vehicles (Rezapour and Ksaibati, 2022; Soica and Gheorghe, 2025).
  </p>
  
- 
-<head>
- <title>My Daily Activities</title>
-<script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
-</head>
-<div id="chart_div"></div>
- <script type="text/javascript">
-  google.charts.load('current', { 'packages' : ['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart(){
-  var data = google.visualization.arrayToDataTable([
-   ['Task','Hours per Day'],
-   ['Work', 8],
-   ['Sleep', 8],
-   ['Eat', 2],
-   ['Study', 4],
-   ['Exercise', 2]
-   ]);
-  
-   var options = {
-    title: 'My Daily Activities',
-    width: 500,
-    height: 400,
-    chartArea: {
-     left:'10%',
-     top:'10%',
-     width:'80%',
-     height:'80%'
-    },
-    pieSliceTextStyle: { fontSize: 14 }
-   };
-
-   var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-   chart.draw(data,options);
-  }
- </script>
  <div id="References"></div>
 <h3>References</h3>
 <p class="ex1">
@@ -190,36 +154,7 @@ Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margi
 In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,111-118.
 </p>
 
-<div id="scatter_div"></div>
-<script type="text/javascript">
-google.charts.setOnLoadCallback(drawScatterChart);
-function drawScatterChart() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Age');
-data.addColumn('number', 'Salary');
-data.addRows([
-[25, 40000],
-[30, 50000],
-[35, 60000],
-[40, 75000],
-[45, 80000],
-[50, 90000]
-]);
-var options = {
-title: 'Age vs. Salary',
-hAxis: { title: 'Age',
-viewWindow: { min:20, max: 55 },
-gridlines: { count: 5 }
-}, 
-vAxis: { title: 'Salary',
-viewWindow: { min: 0, max: 110000 },
-gridlines: { count: 5 }
-}
-};
-var chart = new google.visualization.ScatterChart(document.getElementById('scatter_div'));
-chart.draw(data, options)
-}
-</script>
+
 <div id="last-updated">Loading last update time...</div>
 
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
