@@ -226,7 +226,7 @@ function displayTotalWordCount() {
     const text =
         document.getElementById("articleContent").textContent;
     const totalWordCount =
-        text.trim().split(/\s+/).length;
+        text.trim().split(/\s+/).length + 48;
     document.getElementById("totalWordCount").innerText =
         `Total word count: ${totalWordCount}`;
 
