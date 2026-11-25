@@ -178,7 +178,7 @@ Thorbole, C.K. (2015) 'Seatbelt Submarining Injury and its Prevention Countermea
   async function getLastUpdatedTime() {
     const username = 'FEPSFY6979556';
     const repo = 'FY6979556';
-    const url = `https://api.github.com/repos/${FEPSFY6979556}/${FY6979556}/commits`;
+    const url = `https://api.github.com/repos/${username}/${repo}/commits`; 
 
     try {
       const response = await fetch(url, {
@@ -195,7 +195,7 @@ Thorbole, C.K. (2015) 'Seatbelt Submarining Injury and its Prevention Countermea
       const commits = await response.json();
       if (commits && commits.length > 0) {
         const lastCommitDate = new Date(commits[0].commit.committer.date);
-        document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+        document.getElementById('last-updated').innerText = `${username} Last Modified Time: ${lastCommitDate.toLocaleString()}`;
       } else {
         document.getElementById('last-updated').innerText = 'No commits found in the repository.';
       }
